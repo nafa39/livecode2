@@ -2,6 +2,8 @@ module livecode2
 
 go 1.23.2
 
+require github.com/jinzhu/gorm v1.9.16
+
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
@@ -15,6 +17,7 @@ require (
 	github.com/labstack/echo v3.3.10+incompatible // indirect
 	github.com/labstack/echo/v4 v4.13.0 // indirect
 	github.com/labstack/gommon v0.4.2 // indirect
+	github.com/lib/pq v1.1.1 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-sqlite3 v1.14.24 // indirect
