@@ -6,6 +6,7 @@ import (
 	"log"
 
 	"github.com/joho/godotenv"
+	"github.com/labstack/echo/v4"
 )
 
 func main() {
@@ -17,4 +18,10 @@ func main() {
 
 	config.InitDB()
 	fmt.Println("Hello World")
+
+	e := echo.New()
+	e.GET("/hello", func(c echo.Context) error {
+		return c.String(200, "Hello World")
+	})
+	e.Logger.Fatal(e.Start(":8080"))
 }
